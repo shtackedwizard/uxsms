@@ -12,7 +12,7 @@ BOOL CALLBACK EnumWindowsProc(HWND hWnd, LPARAM lParam) {
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
     for (;;) {
-        Sleep(50);
+        Sleep(25);
         EnumDesktopWindows(NULL, EnumWindowsProc, NULL);
     }
     return 0;
